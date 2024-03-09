@@ -1,0 +1,289 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+p{
+    line-height: 170%;
+}
+
+.section1{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    
+    height: 100vh;
+    background-color: #e4f9f5;
+    position: relative;
+}
+.section1 h1{   
+    padding-bottom: 10px;
+    font-family: "Merriweather", serif;
+    font-weight: 600;
+}
+
+
+
+.txt{
+    padding: 140px 0 0px;
+    font-family: jonas;
+    text-align: center;
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    color: #66BFBF;
+}
+
+/* upper cloud------------------------------- */
+
+@keyframes upper-cloud-animation {
+    0%   { left: 250px;
+        top: 80px}
+        25% {
+            left: 100px;
+            top: 80px
+            
+        }
+        50%  { 
+            left: 350px;
+            top: 80px}
+            100% { left: 250px;
+                top: 100px}
+            }
+            
+            .upper-cloud{
+                position: absolute;
+                left: 250px;
+                top: 80px;
+                animation-name: upper-cloud-animation;
+                animation-duration: 110s;
+                animation-iteration-count: infinite;
+                transition: ease-in-out;
+                
+                
+            }
+            
+            /* ----------------------------lower cloud------------------- */
+            @keyframes lower-cloud-animation {
+                0%   {right: 140px;
+                    top: 250px;}
+                    50%  { 
+                        right: 300px;
+                        top: 250px;}
+                        100% {right: 140px;
+                            top: 250px;}
+                        }
+                        
+                        .lower-cloud{
+                            position: absolute;
+                            right: 140px;
+                            top: 250px;
+                            animation-name: lower-cloud-animation;
+                            transition: ease-in-out;
+                            animation-duration: 70s;
+                            animation-iteration-count: infinite;
+                        }
+                        
+                        
+                        
+                        .mountains{
+                            position: absolute;
+                            bottom: 0px;
+                            
+                        }
+                        
+                        /* ------------------------hr-------------------- */
+                        hr{
+                            border-style: dotted;
+                            border-width: 4px;
+                            width: 8%;
+                            border-style: none;
+                            border-top-style: dotted;
+                            border-color:  #66BFBF;
+                        }
+
+                        /* --------------------- section 02 ------------------------- */
+                        
+                        .middle-container{
+    margin: 20px auto 10px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    /* height: 100vh; */
+    
+    background-color:white;
+    position: relative;
+}
+
+.middle-container h1, h2, h3{
+    font-family: "Merriweather", serif;
+    color: #66BFBF;
+}
+
+.middle-container p{
+    font-family: "Merriweather", serif;
+}
+
+/* ---------profile-------- */
+
+.profile{
+    margin: 50px auto 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.8rem;
+    padding: 10px;
+    
+    width: 80%;
+    
+}
+
+.profile img{
+    height: 200px;
+}
+
+.profile{
+    display: flex;
+}
+
+.profile-txt{
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 14px;
+
+    width: 70%;
+}
+
+/* ----------skills-------- */
+
+.skills{
+    margin-top: 50px;
+    width: 90%;
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.8rem;
+    padding: 10px;
+}
+
+.skills img{
+    border-radius: 100%;
+    height: 110px;
+}
+
+/* ----right */
+
+.skill-row-right{
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skill-row-right-txt{
+    width: 70%;
+}
+
+.skill-row-right-txt p{
+    margin-top: 10px;
+}
+
+
+/* ---left-- */
+
+.skill-row-left{
+    margin: 40px auto 80px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.skill-row-left-txt{
+    width: 70%;
+}
+
+.skill-row-left-txt p{
+    margin-top: 10px;
+}
+
+/* ----------get in touch------------------ */
+
+.contact-me h2, h3, p{
+    font-family: "Montserrat", serif; 
+}
+.contact-me{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3px   ;
+    
+    margin: 40px auto 40px;
+    width: 80%;
+    text-align: center;
+}
+
+
+.btn {
+    background: #66BFBF ;
+    border-radius: 5px;
+    color: #ffffff;
+    font-family: "Montserrat", serif; 
+    font-weight: 600;
+    font-size: 15px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    transition: 200ms ease-in-out;
+  }
+  
+  .btn:hover {
+    background:  #11999E;
+    color: white
+    text-decoration: none;
+  }
+
+
+/* ------------------------bottom container---------------------------------- */
+
+.bottom-container{
+    height: 200px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #66BFBF;
+
+    font-family: "Montserrat", serif; 
+    color: white;
+}
+
+.bottom-container-links{
+   display: flex;
+   gap: 30px;
+   font-size: 20px;
+
+}
+
+.bottom-container-links a{
+    text-decoration: none;
+    color: #11999E;
+    font-weight: 600;
+    transition: all 300ms ease-in-out;
+ 
+ }
+
+ .bottom-container-links a:hover{
+    color: #c9fdff;
+ 
+ }
